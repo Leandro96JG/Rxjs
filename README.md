@@ -1,27 +1,25 @@
 # Proyecto inicial - Curso de RXJS
 
-* Lo primero que debemos de hacer después de descargar el código es ejecutar el comando:
+## Operadores:
 
-```
-npm install
-```
-Ese comando descargará todos los módulos de node necesarios para ejecutar el proyecto.
+### ``range``:
 
+#### que crea un Observable que emite una secuencia de números consecutivos, comenzando desde un valor inicial y continuando por una cantidad específica de emisiones. 
 
-* Cuando termine de instalar los node_modules, entonces podermos ejecutar el proyecto de con el siguiente comando
+#### El operador range toma dos parámetros:``start`` (número inicial): El valor desde el cual comenzará la secuencia. ``count`` (cantidad de emisiones): El número total de valores que serán emitidos.
 
-```
-npm start
-```
-Para que eso funcione, recuerden que deben de ejecutar ese comando en el mismo directorio donde se encuentra el ```package.json```
+### `interval`
 
-## Cambiar el puerto
-Por defecto, el puerto que configuré para este proyecto es el ```8081```, pero si necesitan cambiarlo porque pueda que ese puerto lo use su computadora, pueden cambiarlo abriendo el ```package.json``` >> scripts. Ahí verán la instrucción que lanza el servidor de desarrollo
+#### crea un Observable que emite una secuencia de números incrementales en intervalos de tiempo regulares especificados.
 
-```
-"start": "webpack serve --mode development --open --port=8081"
-```
+### `timer`
+####  puede comportarse de dos maneras dependiendo de los argumentos que se le pasen. Puede emitir un solo valor después de un tiempo específico o puede emitir valores repetidamente después de un retraso inicial y en intervalos regulares.
 
-Simplemente cambian el puerto por el que ustedes necesiten y listo. (lógicamente graban los cambios antes de ejecutar el ```npm start``` nuevamente)
+## ``Los Scheluders`` : Los schedulers controlan cuándo se ejecutan las operaciones de los Observables
+
+### `asincScheluder`
+####  planifica tareas para que se ejecuten de forma asíncrona utilizando las capacidades nativas de temporización de JavaScript, como setTimeout o setInterval.
 
 
+
+####
