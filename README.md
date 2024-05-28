@@ -38,3 +38,13 @@
 
 ## `filter`
 ### El operador filter en RxJS se utiliza para filtrar las emisiones de un Observable según una condición especificada. Solo los valores que cumplen con la condición especificada pasarán a través del filtro y serán emitidos.
+
+
+## `tap`
+###  es un operador de utilidad que permite ejecutar efectos secundarios para cada emisión de un Observable sin modificar los valores emitidos. Es particularmente útil para depuración, logging o para realizar acciones no intrusivas como métricas o side-effects.
+
+## `reduce`
+###  permite acumular valores de un Observable en un solo valor. Se utiliza para aplicar una función acumulativa sobre las emisiones de un Observable y devolver un Observable que emite el valor acumulado final.
+
+## `scan`
+### emite el valor acumulado en cada paso del proceso. Es útil cuando necesitas mantener un seguimiento del estado acumulado a medida que se reciben nuevas emisiones.
