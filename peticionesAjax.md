@@ -10,7 +10,7 @@
 ### te permite suscribirte a *varios Observables simultáneamente* y *recibir todos los valores emitidos* por ellos en un flujo de datos unificado.
 
 ## `mergeMap`
-### que combina las funcionalidades de ``map`` y ``mergeAll``. Este operador es extremadamente útil cuando deseas transformar elementos emitidos por un observable en nuevos observables, y luego aplanar estos observables en un solo flujo continuo.
+### que combina las funcionalidades de ``map`` y ``mergeAll``. Este operador es extremadamente útil cuando deseas transformar elementos emitidos por un observable en nuevos observables, y luego aplanar estos *observables en un solo flujo continuo*.
 
 ## `switchMap`
 ### se utiliza para *mapear cada valor emitido* por un observable en un nuevo observable interno, y luego *aplanar estos observables en un solo flujo de salida*, pero con una característica especial: si un nuevo valor es emitido por el observable fuente antes de que el observable interno anterior complete, switchMap cancelará la suscripción al observable interno anterior y se suscribirá al nuevo observable interno.
